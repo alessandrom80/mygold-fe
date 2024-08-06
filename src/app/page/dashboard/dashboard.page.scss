@@ -1,0 +1,55 @@
+ion-card{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color:white;
+    height: 45px;
+    padding-top: 8px;
+}
+.gold{
+    font-size: 20px;
+    color:gold;
+    width: 100%;
+}
+.graph{
+  min-height: 200px;
+}
+.label-piechart-top{
+  font-size: 15px;
+  color:gray;
+  font-weight: 600;
+}
+.label-piechart-bottom{
+  font-size: 12px;
+  color:white;
+  font-weight: 600;
+}
+.label-top-gold{
+  color:gold;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.label-bottom-gold{
+  color:gold;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.legend-rev-gold{
+  padding: 0px; 
+  width: 76%;   
+  line-height: 1.2; 
+  display: inline-block; 
+  vertical-align: middle
+}
+.buy-plan-gold{
+  padding: 0px; 
+  width: 100%;
+  line-height: 1.4; 
+  display: inline-block; 
+  vertical-align: middle;
+  span, span.gold{
+    font-size: 12px;
+  }
+}

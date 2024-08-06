@@ -1,0 +1,42 @@
+
+ngx-charts-bar-vertical-2d {
+  width: 200px;
+  ::ng-deep {
+    ngx-charts-chart {
+      top: 45px;
+      position: relative;
+      div.ngx-charts-outer{
+        left: 3.2cqw;
+        position: relative;
+      }
+      
+    }
+  }
+}
+
+
+.title{
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  }
+  .bottom{
+    position: absolute;
+    top: 245px;
+    left: 50px;
+  }
+  .sideLegend{
+    position: absolute;
+    top: 105px;
+    left: 167px;
+    height: 63%;
+  }
+  .center-caption{
+    position: absolute;
+    top: 160px;
+    left: 62px;
+  }
+  .graph{
+    min-height: 200px;
+    height: 100%;
+  }

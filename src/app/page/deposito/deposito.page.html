@@ -1,0 +1,110 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Deposito</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row style="margin-top: 14px;">
+      <ion-col>&nbsp;</ion-col>
+    </ion-row>
+    <app-header></app-header>
+    <ion-row>
+      <ion-col class="square" >
+
+          <app-pie-chart [pieChartData]="totalWallet" >
+            <div title>
+              <span class="label-piechart-top">Portafoglio </span><span class="label-top-gold">Totale</span>
+            </div>
+            <div bottom>
+              <ion-row style="    position: relative; top: -60px;">
+                <span class="label-piechart-bottom">Total balance: </span> <span class="label-bottom-gold">123.8765 $</span>
+              </ion-row>
+              <ion-row style="    position: relative; top: -45px;">
+                <ion-col offset="1" size="11">
+                  <div class="btn" >
+                    Vendi
+                  </div>
+                  <div style="height: 5px;"></div>
+                  <div class="btn" >
+                    Ritira
+                  </div>
+                </ion-col>
+              </ion-row>
+            </div>
+            <div sideLegend>
+              <div>
+                <div style="
+                    margin-top:4px;
+                    width: 8px;
+                    height: 8px;
+                    background-color: gold;    
+                    border:1px solid gold; 
+                    border-radius:50%;
+                    float:left">
+                </div> &nbsp;&nbsp;Oro
+              </div>
+  
+            </div>
+            <div centerCaption>
+              <span style="font-size: 14px; font-weight: 600;">
+                Gr. 543,00
+              </span>
+            </div>
+          </app-pie-chart>
+
+
+
+      </ion-col>
+      <ion-col class="square">
+        <ion-card >
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <img src="../../../assets/images/lingotto.jpg">
+              </ion-col>
+              <ion-col style="padding: 3cqh;">
+                <ion-row style="height: 6cqh; color:white;font-weight: 700;">
+                  <ion-col>
+                    Lingotto 50gr. Dim. 20x50mm
+                  </ion-col>
+                </ion-row>
+                <ion-row style="height: 6cqh; color:white;font-weight: 700;">
+                  <ion-col >
+                    Quotazione <span class="gold">1.000000</span> Euro
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+           
+            <ion-row>
+              <ion-col offset="1" size="10">
+                <div class="btn" >
+                  Vendi
+                </div>
+                <div style="height: 5px;"></div>
+                <div class="btn" >
+                  Ritira
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
+      <ion-col class="square">
+        <ion-card >
+          
+        </ion-card>
+      </ion-col>
+      <ion-col class="square">
+        <ion-card>
+          
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

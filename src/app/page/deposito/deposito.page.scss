@@ -1,0 +1,38 @@
+.square{
+    min-height: 400px;
+    ion-card{
+        height: 100%;
+    }
+}
+.gold{
+    color:gold;
+}
+
+.label-piechart-top{
+    font-size: 15px;
+    color:gray;
+    font-weight: 600;
+  }
+  .label-piechart-bottom{
+    font-size: 12px;
+    color:white;
+    font-weight: 600;
+  }
+  .label-top-gold{
+    color:gold;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .label-bottom-gold{
+    color:gold;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .btn{
+    padding-top:5px;text-align:center; 
+    min-width:200px; 
+    width: 100%; 
+    background-color: #d0ac52;
+    color:white; height: 25px;
+  }

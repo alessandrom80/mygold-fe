@@ -1,0 +1,35 @@
+<ion-card class="graph" >
+  <ngx-charts-advanced-pie-chart  
+  appDinamicTop  
+    style="position: relative;"
+    [view]="pieChartData.view"
+    [label]= "label"
+    [animations]= "animations"
+    [gradient] = "gradient"         
+    [scheme]="pieChartData.scheme"
+    [results]="pieChartData.result"
+    [percentageFormatting]="percentageFormatting"
+    [valueFormatting]="valueFormatting"
+    (select)="onSelect($event)">
+  </ngx-charts-advanced-pie-chart>    
+</ion-card>
+<div class="title">
+  <ng-content select="[title]">
+
+  </ng-content>
+</div>
+<div class="bottom">
+  <ng-content select="[bottom]">
+
+  </ng-content>
+</div>
+<div class="sideLegend" >
+  <ng-content select="[sideLegend]">
+
+  </ng-content>
+</div>
+<div class="center-caption" >
+  <ng-content select="[centerCaption]">
+
+  </ng-content>
+</div>

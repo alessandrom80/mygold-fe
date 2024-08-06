@@ -1,0 +1,84 @@
+
+/* General/Global Style */
+body  {
+}
+
+a {
+  color: var(--ion-color-secondary);
+  text-decoration: none;
+}
+
+/* Input */
+/* Reset the background-color, box-shadow, and other properties */
+input:autofill,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s !important;
+  text-shadow: 0px 0px 3px #fff;
+}
+
+/* Override the default background-color */
+input {
+  background-color: transparent !important;
+}
+
+.width-100 {
+  width: 100%;
+}
+.width-50 {
+  width: 50%;
+}
+
+/* Gaps */
+.gap5  { display: block; width: 100%; height: 5px; }
+.gap10 { display: block; width: 100%; height: 10px; }
+.gap15 { display: block; width: 100%; height: 15px; }
+.gap20 { display: block; width: 100%; height: 20px; }
+.gap25 { display: block; width: 100%; height: 25px; }
+.gap30 { display: block; width: 100%; height: 30px; }
+
+/* Typography */
+.text-bold {
+  font-weight: bold;
+}
+
+/* Center Element */
+.centered-element {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Backgrounds */
+.bg-gold-gradient {
+  background: linear-gradient(90deg, #CFB45B 0%, #B08D32 100%);
+  color: #3E3535;
+  --background: linear-gradient(90deg, #CFB45B 0%, #B08D32 100%);
+  --color: #3E3535;
+}
+
+/* Box */
+.box {
+  width: 100%;
+ // height: 80px;
+  margin: 0 auto 0 auto;
+  padding: 15px 15px 15px 15px;
+  border-radius: 13px;
+  background: rgba(0, 0, 0, 0.30);
+  margin-bottom: 8px;
+}
+.box-640 {
+  max-width: 640px;
+  min-width: 320px;
+}
+
+.normal-case {
+  text-transform: capitalize;
+}

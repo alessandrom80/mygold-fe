@@ -1,0 +1,7 @@
+{
+  "name": "MyGold",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

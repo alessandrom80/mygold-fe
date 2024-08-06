@@ -1,0 +1,57 @@
+
+  ngx-charts-advanced-pie-chart {
+    width: 200px;
+    ::ng-deep {
+      .advanced-pie-legend-wrapper {
+        width: 0px!important;
+        
+      }
+      div{
+        width: 200px!important;
+        height: 200px!important;
+      }
+      .advanced-pie.chart{
+        width: 108px!important;
+        height: 167px!important;
+      }
+      .ngx-charts-outer{
+        width: 100px!important;
+        height: 200px!important;
+      }
+      .advanced-pie-legend{
+        width: 0px!important;
+        display: none!important;
+      }
+      .ngx-charts{
+        width: 100px!important;
+        height: 200px!important;
+      }
+    }
+}
+
+.title{
+  position: absolute;
+  top: 10%;
+  left: 26px;
+}
+.bottom{
+  position: absolute;
+  top: 90%;
+  left: 50px;
+}
+.sideLegend{
+  position: absolute;
+  top: 30%;
+  left: 167px;
+  height: 63%;
+}
+.center-caption{
+  position: absolute;
+  top: 50%;
+  left: 62px;
+}
+.graph{
+  min-height: 200px;
+  height: 100%;
+
+}

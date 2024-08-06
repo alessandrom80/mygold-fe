@@ -1,0 +1,45 @@
+<ion-card class="graph">
+
+
+    <ngx-charts-bar-vertical-2d
+        [view]="barChartData.view"
+        [scheme]="barChartData.scheme"
+        [results]="barChartData.multi"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [legendTitle]="legendTitle"
+        (select)="onSelect($event)"
+        (activate)="onActivate($event)"
+        (deactivate)="onDeactivate($event)">
+    </ngx-charts-bar-vertical-2d>
+
+    <div class="title">
+      <ng-content select="[title]">
+    
+      </ng-content>
+    </div>
+    <div class="bottom">
+      <ng-content select="[bottom]">
+    
+      </ng-content>
+    </div>
+    <div class="sideLegend" >
+      <ng-content select="[sideLegend]">
+    
+      </ng-content>
+    </div>
+    <div class="center-caption" >
+      <ng-content select="[centerCaption]">
+    
+      </ng-content>
+    </div>
+
+
+
+</ion-card>

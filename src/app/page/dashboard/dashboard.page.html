@@ -1,0 +1,145 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-grid>
+  <ion-row style="margin-top: 14px;">
+    <ion-col>&nbsp;</ion-col>
+  </ion-row>
+  <app-header></app-header>
+  <ion-row>
+    <ion-col sizeMd="3" sizeXs="12">     
+      <app-pie-chart [pieChartData]="totalWallet"> 
+          <div title>
+            <span class="label-piechart-top">Portafoglio </span><span class="label-top-gold">Totale</span>
+          </div>
+          <div bottom>
+            <span class="label-piechart-bottom">Total balance: </span> <span class="label-bottom-gold">123.8765 $</span>
+          </div>
+          <div sideLegend>
+            <div>
+              <div style="
+                  margin-top:4px;
+                  width: 8px;
+                  height: 8px;
+                  background-color: gold;    
+                  border:1px solid gold; 
+                  border-radius:50%;
+                  float:left">
+              </div> &nbsp;&nbsp;Oro
+            </div>
+
+          </div>
+          <div centerCaption>
+            <span style="font-size: 14px; font-weight: 600;">
+              Gr. 543,00
+            </span>
+          </div>
+      </app-pie-chart>
+    </ion-col>
+
+
+    <ion-col sizeMd="3" sizeXs="12">
+     
+      <app-pie-chart [pieChartData]="revaluateDepositPie" [gradient]="true"> 
+        <div title>
+          <span class="label-piechart-top">Rivalutazione </span><span class="label-top-gold">Deposito</span>
+        </div>
+        <div sideLegend>
+          <div class="legend-rev-gold" >
+            <span style="font-size: 10px;">Rivalutazione per il mese di ottobre:</span><br>
+            <span class="gold" style="font-size: 12px;">5%</span><br>
+            <span style="font-size: 10px;">Rivalutazione totali:</span><br>
+            <span class="gold" style="font-size: 12px;">12%</span><br>
+          </div>
+        </div>  
+      </app-pie-chart>
+    </ion-col>
+
+
+
+    <ion-col sizeMd="3" sizeXs="12">
+     
+      <app-pie-chart [pieChartData]="totalWallet"> 
+        <div title>
+          <span class="label-piechart-top">Piano Acquisto </span>
+          <span class="label-top-gold">Oro</span>
+        </div>
+        <div sideLegend>
+          <div class="buy-plan-gold" >
+            <span>PAO 100 213%</span><BR>
+            <span class="gold">PAO 250 85%</span><BR>
+            <span>PAO 500 43%</span><BR>
+            <span>PAO 1000 21%</span><BR>
+          </div>
+        </div>
+        <div bottom>
+          <span class="label-piechart-bottom">Total balance: </span> <span class="label-bottom-gold">214.00 gr. ORO</span>
+        </div> 
+      </app-pie-chart>
+    </ion-col>
+
+    <ion-col sizeMd="3" sizeXs="12">
+    
+      <app-bar-chart 
+            [barChartData]="revaluateDepositBar"
+            [gradient]="true"
+            [showXAxis]="true"
+            [showYAxis]="true"
+            [showLegend]="false"
+            [showXAxisLabel]="false"
+            [showYAxisLabel]="false"
+            [xAxisLabel]="'x'"
+            [yAxisLabel]="'y'"
+            [legendTitle]="'legendTitle'"> 
+            <div title>
+              <span class="label-piechart-top">Rivalutazione </span><span class="label-top-gold">Deposito</span>
+            </div>
+
+      </app-bar-chart>
+    </ion-col>
+  </ion-row>
+  
+  <ion-row>
+    <ion-col sizeMd="9" sizeXs="12">
+        <app-tradingview></app-tradingview>
+    </ion-col>
+    <ion-col sizeMd="3" sizeXs="12">
+      <ion-card class="graph" style="height:250px;">
+        <span style="font-size: 32px; font-weight: 100;">Compra </span>
+        <span class="gold"  style="font-size: 32px; font-weight: 100;">ORO</span>
+        <div style="height: 5cqh;"></div>
+        <ion-grid>
+          <ion-row>
+            <ion-col offset="1" size="8" style="border:1px solid gold;">
+              100,00
+            </ion-col>
+            <ion-col size="2" style="border:1px solid gold;">
+              Gr.
+            </ion-col>
+          </ion-row>
+          <div style="height: 2cqh;"></div>
+          <ion-row >
+            <ion-col style="font-size: 10px;">
+              TOTAL AMOUNT: <SPAN class="gold" style="font-size: 10px;">7.400$</SPAN>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-button color="success" style="border-radius: 0px; color:white">
+                COMPRA ORO
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
